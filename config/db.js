@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongo_url = 'mongodb://viwesomagaca:viwesomagaca95@ds261155.mlab.com:61155/passport_api'
+const mongo_url = process.env.MONGO_URL;
 
 mongoose.connect(
     mongo_url,
